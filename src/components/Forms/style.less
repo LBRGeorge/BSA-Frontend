@@ -1,0 +1,33 @@
+.auth-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+
+  .side-landing {
+    display: flex;
+    flex-direction: column;
+    background-color: @secondary-color;
+    width: 40%;
+    height: 100%;
+    padding: 60px;
+    padding-top: 15%;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .content {
+    width: 60%;
+    height: 100%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 10%;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      padding-top: 30%;
+    }
+  }
+}
